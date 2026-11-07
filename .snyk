@@ -1,0 +1,11 @@
+# Snyk policy file
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Package deprecated and unpatched, accepted risk for dev testing'
+        expires: 2026-12-31
+  SNYK-JS-DECOMPRESS-20254116:
+    - '*':
+        reason: 'Dev-only dependency, not included in production bundle'
+        expires: 2026-12-31
